@@ -26,8 +26,8 @@
     color: #424242;
     font-family: Work Sans;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
+    /* font-weight: 500; */
+    /* line-height: 26px; */
     /* 144.444% */
 }
 
@@ -52,21 +52,21 @@ header {
     max-width: 800px;
     text-align: center;
     margin: 0px auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .banner-tittle {
     color: #131313;
     font-size: 3.5rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     padding-bottom: 15px;
 }
 
 .banner-description {
     color: #727272;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 26px;
+    /* font-weight: 400; */
+    /* line-height: 26px; */
     padding-bottom: 15px;
 }
 
@@ -78,6 +78,33 @@ header {
     height: 64px;
     background-color: #FF900E;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 20px 25px;
     margin-bottom: 50px;
+}
+img{
+    text-align: center;
+    width: 100%;
+}
+
+/* responsive header and banner section */ 
+/* small screen mobile devices */
+@media screen  and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+   
+    .navigation{
+        flex-direction: column;
+    }
+}
+/* tablet or medium screen mobile devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px 100px;
+    }
+    .navigation{
+        flex-direction: column;
+    }
+    
 }
