@@ -169,7 +169,7 @@ img {
 
 h5 {
     color: var(--dark-01, #131313);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-bottom: 10px;
 
 }
@@ -189,6 +189,12 @@ h2 {
     font-size: 1rem;
 }
 /* sponshor section design */
+.sponsor-info{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 100px 0px;
+}
 .sponshor{
     display: flex;
     justify-content: space-between;
@@ -291,6 +297,7 @@ footer>p {
         flex-direction: column-reverse;
         width: 90%;
         /* justify-content: center; */
+        padding-bottom: 0px;
     }
 
     .info-part {
@@ -321,9 +328,28 @@ footer>p {
 
 /* sponshor media quiry */
 @media screen and (max-width:576px) {
+    .sponsor-info{
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    .sponsor-info{
+        width: 100%;
+        padding:20px 0px;
+    }
+    .enjoy{
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width:576px) {
 
 .sponshor{
     margin: 0px 20px;
+}
+.sponsor-info{
+    width: 100%;
+    padding:30px 0px;
 }
 .sponshor>img{
     width: 15%;
