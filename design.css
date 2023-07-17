@@ -144,6 +144,51 @@ img {
 
 }
 
+.enjoy {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.info-part {
+    width: 45%;
+
+}
+
+.info-part>div {
+    padding: 30px 0px;
+}
+
+.image-part {
+    width: 45%;
+}
+
+h5 {
+    color: var(--dark-01, #131313);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+
+}
+
+h2 {
+    color: var(--dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+
+}
+
+.paragraph {
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+}
+
 /* responsive header and banner section */
 /* small screen mobile devices */
 @media screen and (max-width:576px) {
@@ -172,32 +217,68 @@ img {
 
 /* media quiry for main section */
 @media screen and (max-width:576px) {
-    .team-container{
+    .team-container {
         flex-direction: column;
         flex-direction: column-reverse;
-        padding: 0px ;
+        padding: 0px;
         margin-right: 0px;
     }
-    .image-content{
+
+    .image-content {
         grid-template-columns: 1fr;
         margin-right: 0px;
     }
-    .team-content{
+
+    .team-content {
         padding-left: 10px;
     }
 }
+
 /* resonsive for medium screen or tablet devices */
 @media screen and (min-width:576px) and (max-width:960px) {
 
-    .team-container{
+    .team-container {
         flex-direction: column;
         flex-direction: column-reverse;
-        padding: 0px ;
+        padding: 0px;
         margin-right: 0px;
     }
-    .image-content{
-        grid-template-columns:repeat(2,1fr);
+
+    .image-content {
+        grid-template-columns: repeat(2, 1fr);
         margin-right: 0px;
-        
+
+    }
+}
+
+/* responsive enjoying part */
+
+/* small device */
+@media screen and (max-width:576px) {
+    .enjoy{
+        flex-direction: column-reverse;
+        width: 90%;
+        /* justify-content: center; */
+    }
+    .info-part{
+        width: 100%;
+    }
+    .image-part{
+        width: 100%;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    .enjoy{
+        flex-direction: column-reverse;
+        width: 90%;
+        /* justify-content: center; */
+    }
+    .info-part{
+        width: 100%;
+    }
+    .image-part{
+        width: 100%;
     }
 }
